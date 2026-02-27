@@ -1,175 +1,213 @@
-# NLP Support Ticket Classifier
+# 🎫 NLP Support Ticket Classifier
 
-An end-to-end NLP system that automatically classifies customer support tickets using email text and contextual metadata such as priority, queue, and tags.
+<p align="center">
 
-Achieved **87% classification accuracy** using a multi-input deep learning model.
+🚀 Deep Learning based Context-Aware Ticket Classification System
+
+🏆 Achieved **87% Accuracy** | 🤖 Multi-Input Neural Network | 🌐 Streamlit Web App
+
+</p>
 
 ---
 
-## Business Problem
+<p align="center">
 
-Manual ticket classification is:
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange?logo=tensorflow)
+![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-ML-yellow?logo=scikit-learn)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red?logo=streamlit)
+![Status](https://img.shields.io/badge/Status-ProductionReady-brightgreen)
 
-• Time consuming
-• Error prone
-• Not scalable
+</p>
 
-This system automates classification into:
+---
+
+# 📌 Overview
+
+This project is an **End-to-End NLP System** that automatically classifies customer support tickets using:
+
+* 📧 Email Text
+* ⚡ Priority
+* 🏢 Queue
+* 🏷️ Tags
+
+into predefined categories:
 
 * Incident
 * Request
 * Problem
 * Change
 
----
-
-## Project Architecture
-
-Multi-Input Deep Learning Model:
-
-Inputs:
-
-* Email Text
-* Priority
-* Queue
-* Tags
-
-Output:
-
-* Ticket Category
-
-As shown in project architecture diagram (see screenshots folder)
+This eliminates manual effort and improves operational efficiency.
 
 ---
 
-## Tech Stack
+# 💼 Business Impact
 
-Python
-TensorFlow / Keras
-Scikit-Learn
-Pandas
-NumPy
-NLTK
-Streamlit
+Manual ticket classification is:
+
+❌ Time-Consuming
+❌ Error-Prone
+❌ Not Scalable
+
+✅ This system automates classification instantly
+✅ Improves support team productivity
+✅ Enables faster response time
 
 ---
 
-## Machine Learning Pipeline
+# 🧠 Model Architecture
 
-### Step 1: Data Preprocessing
+## Multi-Input Deep Learning Model
 
-* Text cleaning
-* Lowercasing
-* Remove special characters
-* Tokenization
+### Inputs:
 
-### Step 2: Feature Engineering
-
-Text → Embedding Layer
-
-Metadata Encoding:
-
+* Email Text → Embedding + LSTM
+* Priority → Encoded Features
 * Queue → Label Encoding
-* Priority → Ordinal Encoding
-* Tags → MultiLabelBinarizer
+* Tags → Multi-Label Encoding
 
-### Step 3: Model
+### Output:
 
-Multi-Input Neural Network
+🎯 Ticket Category Prediction
 
-Components:
+📊 See architecture diagram in **screenshots folder**
+
+---
+
+# ⚙️ Tech Stack
+
+| Category         | Tools             |
+| ---------------- | ----------------- |
+| Language         | Python            |
+| Deep Learning    | TensorFlow, Keras |
+| Machine Learning | Scikit-Learn      |
+| NLP              | NLTK              |
+| Data Processing  | Pandas, NumPy     |
+| Web App          | Streamlit         |
+
+---
+
+# 🔬 Machine Learning Pipeline
+
+## 1️⃣ Data Preprocessing
+
+✔ Text Cleaning
+✔ Lowercasing
+✔ Special Character Removal
+✔ Tokenization
+
+---
+
+## 2️⃣ Feature Engineering
+
+| Feature  | Method              |
+| -------- | ------------------- |
+| Text     | Embedding Layer     |
+| Queue    | Label Encoding      |
+| Priority | Ordinal Encoding    |
+| Tags     | MultiLabelBinarizer |
+
+---
+
+## 3️⃣ Model
+
+Neural Network Layers:
 
 * Embedding Layer
 * LSTM Layer
 * Dense Layers
 * Concatenation Layer
+* Output Layer
 
 ---
 
-## Model Performance
+# 📊 Model Performance
 
-Accuracy: **87%**
-
-Detailed metrics:
-
-Precision: 0.87
-Recall: 0.87
-F1-Score: 0.87
-
-(Tested on 3268 samples)
-
-(Source: Project evaluation results) 
+🎯 Accuracy: **87%**
+📦 Tested on **3268 real support tickets**
 
 ---
 
-## User Interface
+# 🌐 Web Application
 
-Streamlit based web interface
+Built using **Streamlit**
 
-User can:
+## Features:
 
-• Enter ticket text
-• Select priority
-• Select queue
-• Select tags
+✔ User enters ticket text
+✔ Select metadata
+✔ Instant prediction
 
-System predicts ticket category instantly
+📸 See UI in screenshots folder
 
 ---
 
-## How to Run Project
+# 🚀 How to Run
 
-### Step 1
+## Clone Repository
 
-Clone repo
-
-```
+```bash
 git clone https://github.com/yourusername/nlp-support-ticket-classifier
 ```
 
-### Step 2
+---
 
-Install requirements
+## Install Requirements
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-### Step 3
+---
 
-Run
+## Run Application
 
-```
+```bash
 streamlit run app/streamlit_app.py
 ```
 
 ---
 
-## Project Highlights
+# ⭐ Key Highlights
 
-Multi-Input Deep Learning
+✅ Multi-Input Deep Learning Model
 
-Real-world use case
+✅ Real-World Dataset
 
-Production ready structure
+✅ Production-Ready Structure
 
-Web app included
+✅ Web Application Interface
 
----
-
-## Future Improvements
-
-• Use BERT
-• Deploy on AWS
-• Improve accuracy to 92%+
+✅ Resume-Level Project
 
 ---
 
-## Author
+# 🔮 Future Improvements
 
-Sahil Khedekar
+🚀 BERT Integration
 
-CDAC DBDA
-AIR 204
+☁️ AWS Deployment
 
-LinkedIn: add link
+📈 Improve Accuracy to 92%+
+
+🌍 Multi-Language Support
+
+---
+
+# 👨‍💻 Author
+
+**Sahil Khedekar**
+
+🎓 CDAC DBDA
+🏆 AIR 204
+
+🔗 LinkedIn
+https://linkedin.com/in/sahil-khedekar1908
+
+🔗 GitHub
+https://github.com/sahil-khedekar19
+
+---
+
+# ⭐ If you found this useful, consider giving it a star!
